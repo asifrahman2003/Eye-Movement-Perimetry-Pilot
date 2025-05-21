@@ -1,26 +1,30 @@
 # Eye-Movement-Perimetry-Pilot
-This repository contains a complete, offline pipeline for estimating eye gaze direction (yaw, pitch) from a recorded video of a moving black‑dot stimulus, detecting gaze shifts, and quantifying their alignment with a known 2 s stimulus schedule.
+This repository contains a complete, offline pipeline for estimating eye gaze direction (yaw, pitch) from a recorded video of a moving black‑dot stimulus, detecting gaze shifts, and quantifying their alignment with a known 2s stimulus schedule.
 
 ## Repository Structure
-├── gaze_estimate.py       # Extract per-frame yaw/pitch from video via MediaPipe Face Mesh
-├── gaze_analysis.py       # Smooth signals, detect peaks, compute metrics, save plots
-├── mediapipe_gaze.csv     # Raw time series: time_s, yaw, pitch
-├── gaze_peaks.csv         # Stimulus-to-peak mappings: stim_time_s, yaw_peak_s, yaw_err_s, pitch_peak_s, pitch_err_s
-├── analysis_outputs/      # Folder containing saved plots
-│   ├── yaw_plot.png       # Yaw vs. time with detected peaks and stimuli markers
-│   └── pitch_plot.png     # Pitch vs. time with detected peaks and stimuli markers
-├── GazeEstimatorReport.pdf # Detailed documentation, methods, results, and discussion
-└── README.md              # This file
+├── gaze_estimate.py         # Extract per-frame yaw/pitch via MediaPipe Face Mesh
+├── gaze_analysis.py         # Smooth signals, detect peaks, compute metrics, save plots
+├── mediapipe_gaze.csv       # Raw time series: time_s, yaw, pitch
+├── gaze_peaks.csv           # Stimulus-to-peak mappings: stim_time_s, yaw_peak_s, yaw_err_s, pitch_peak_s, pitch_err_s
+├── analysis_outputs/        # Saved plot images
+│   ├── yaw_plot.png         # Yaw vs. time with detected peaks and stimulus markers
+│   └── pitch_plot.png       # Pitch vs. time with detected peaks and stimulus markers
+├── GazeEstimatorReport.pdf  # Detailed documentation, methods, results, discussion
+└── README.md                # This file
 
 ## Getting Started
 ### Prerequisites
-Python 3.7+
-pip (Python package manager)
 
-## Installation
-### Clone this repository:
-git clone https://github.com/<your‑username>/gaze‑tracking‑pilot.git
-cd gaze‑tracking‑pilot
+- Python 3.7+  
+- pip (Python package manager)  
+
+### Installation
+
+1. **Clone the repository**  
+   ```
+   git clone https://github.com/<your-username>/Eye-Movement-Perimetry-Pilot.git
+   cd Eye-Movement-Perimetry-Pilot
+   ```
 
 ### Install required Python packages:
 pip install mediapipe opencv-python pandas numpy scipy matplotlib
