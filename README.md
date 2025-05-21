@@ -35,13 +35,13 @@ This repository contains a complete, offline pipeline for estimating eye gaze di
 
 ### 1. Gaze Extraction
 Runs MediaPipe Face Mesh on the recorded video to extract normalized yaw and pitch per frame.
-python gaze_estimate.py --video path/to/your/video.mp4
+```python gaze_estimate.py --video path/to/your/video.mp4```
 Outputs mediapipe_gaze.csv in the working directory.
 
 ### 2. Gaze Analysis
 
 Loads the raw gaze CSV, smooths the signals, detects gaze-shift peaks, matches them to the 2 s stimulus schedule, computes accuracy metrics, and saves plots.
-python gaze_analysis.py
+```python gaze_analysis.py```
 Outputs:
 gaze_peaks.csv (stimulus-to-peak details)
 analysis_outputs/yaw_plot.png
