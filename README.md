@@ -2,6 +2,7 @@
 This repository contains a complete, offline pipeline for estimating eye gaze direction (yaw, pitch) from a recorded video of a moving black‑dot stimulus, detecting gaze shifts, and quantifying their alignment with a known 2s stimulus schedule.
 
 ## Repository Structure
+```
 ├── gaze_estimate.py         # Extract per-frame yaw/pitch via MediaPipe Face Mesh
 ├── gaze_analysis.py         # Smooth signals, detect peaks, compute metrics, save plots
 ├── mediapipe_gaze.csv       # Raw time series: time_s, yaw, pitch
@@ -11,6 +12,7 @@ This repository contains a complete, offline pipeline for estimating eye gaze di
 │   └── pitch_plot.png       # Pitch vs. time with detected peaks and stimulus markers
 ├── GazeEstimatorReport.pdf  # Detailed documentation, methods, results, discussion
 └── README.md                # This file
+```
 
 ## Getting Started
 ### Prerequisites
@@ -27,7 +29,7 @@ This repository contains a complete, offline pipeline for estimating eye gaze di
    ```
 
 ### Install required Python packages:
-pip install mediapipe opencv-python pandas numpy scipy matplotlib
+```pip install mediapipe opencv-python pandas numpy scipy matplotlib```
 
 ## Usage
 
