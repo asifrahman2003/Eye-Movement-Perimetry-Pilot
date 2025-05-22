@@ -24,7 +24,7 @@ This repository contains a complete, offline pipeline for estimating eye gaze di
 
 1. **Clone the repository**  
    ```
-   git clone https://github.com/<your-username>/Eye-Movement-Perimetry-Pilot.git
+   git clone https://github.com/asifrahman2003/Eye-Movement-Perimetry-Pilot.git
    cd Eye-Movement-Perimetry-Pilot
    ```
 
