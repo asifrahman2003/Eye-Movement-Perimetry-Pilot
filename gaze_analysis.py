@@ -28,7 +28,8 @@ pitch_s = uniform_filter1d(pitch, size=window_size)
 # Estimates FPS and define ideal stimulus times
 fps = 1 / np.median(np.diff(times))
 max_time = times[-1]
-ideal_times = np.arange(2, max_time, 2)
+# update: 3s stimuli dot
+ideal_times = np.arange(3, 37, 3)
 
 # Detects peaks in yaw & pitch
 min_distance = int(0.8 * fps)  # at least 0.8 s between peaks
